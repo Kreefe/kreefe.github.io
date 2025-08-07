@@ -1,0 +1,7 @@
+<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>Pornhub</ShortName>
+  <Description>Pornhub Search</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image width="16" height="16">https://di.phncdn.com/www-static/favicon.ico</Image>
+  <Url type="text/html" method="GET" template="https://www.pornhub.com/video/search?search={searchTerms}"/>
+</SearchPlugin>
