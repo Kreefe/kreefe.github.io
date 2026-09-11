@@ -1,296 +1,580 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
-		<title>Kreefe | Portfolio</title>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Создатель Уггла | Личный сайт гения (Тим Кук на проводе)</title>
+  <meta name="description" content="Официальный сайт создателя Уггла. Тим Кук звонит каждое утро в 4:00. 100% интернета работает на моих алгоритмах." />
+  
+  <!-- Fonts: Unbounded (sharp geometric), JetBrains Mono (tech/mono), Inter (clean sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Unbounded:wght@400;600;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+</head>
+<body class="sharp-theme">
 
-		<!-- Google Fonts -->
-		<link
-			rel="preconnect"
-			href="https://fonts.googleapis.com"
-		/>
-		<link
-			rel="preconnect"
-			href="https://fonts.gstatic.com"
-			crossorigin
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;600;700&display=swap"
-			rel="stylesheet"
-		/>
+  <!-- TOP TICKER BAR -->
+  <aside class="ticker-bar" aria-label="Срочные новости">
+    <div class="ticker-track">
+      <div class="ticker-item"><span>⚡ СРОЧНО:</span> Тим Кук снова замечен у подъезда с кофе и новым контрактом на $40 млрд</div>
+      <div class="ticker-item"><span>🔍 УГГЛ:</span> Обработано 42 септиллиона запросов «как центрировать div» за 0.0001 сек</div>
+      <div class="ticker-item"><span>🚨 ВНИМАНИЕ:</span> Сундар Пичаи просит вернуть root-пароль от мирового интернета</div>
+      <div class="ticker-item"><span>🍎 APPLE:</span> Презентация отложена, потому что автор сайта ещё не согласовал цвет титана</div>
+      <!-- Duplicate for seamless infinite scroll -->
+      <div class="ticker-item"><span>⚡ СРОЧНО:</span> Тим Кук снова замечен у подъезда с кофе и новым контрактом на $40 млрд</div>
+      <div class="ticker-item"><span>🔍 УГГЛ:</span> Обработано 42 септиллиона запросов «как центрировать div» за 0.0001 сек</div>
+      <div class="ticker-item"><span>🚨 ВНИМАНИЕ:</span> Сундар Пичаи просит вернуть root-пароль от мирового интернета</div>
+      <div class="ticker-item"><span>🍎 APPLE:</span> Презентация отложена, потому что автор сайта ещё не согласовал цвет титана</div>
+    </div>
+  </aside>
 
-		<!-- Styles -->
-		<link
-			rel="stylesheet"
-			href="./styles.css"
-		/>
-	</head>
-	<body>
-		<!-- Animated Background Blobs -->
-		<div class="bg-blobs">
-			<div class="blob blob-1"></div>
-			<div class="blob blob-2"></div>
-			<div class="blob blob-3"></div>
-		</div>
+  <!-- NAVIGATION -->
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="brand">
+        <a href="#" class="brand-link">
+          <span class="brand-glyph">▲</span>
+          <span class="brand-title">UGGL_FOUNDER<span class="accent-dot">.</span>IO</span>
+        </a>
+        <div class="brand-badge">STATUS: BUSY (TIM COOK ON HOLD)</div>
+      </div>
 
-		<!-- Main Content -->
-		<main class="container">
-			<!-- Hero Section -->
-			<section class="hero">
-				<div
-					class="glass-card hero-card tilt-card"
-					data-tilt
-				>
-					<div class="card-glow"></div>
-					<div class="hero-content">
-						<div class="badge">Developer & Creator</div>
-						<h1 class="title">
-							Hi, I'm
-							<span class="accent">Kreefe</span>
-						</h1>
-						<p class="subtitle">
-							Building immersive digital experiences and tools.
-						</p>
-						<div class="actions">
-							<a
-								href="https://github.com/Kreefe"
-								target="_blank"
-								rel="noopener noreferrer"
-								class="glass-btn primary-btn"
-							>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="20"
-									height="20"
-									viewBox="0 0 24 24"
-									fill="none"
-									stroke="currentColor"
-									stroke-width="2"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								>
-									<path
-										d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
-									/>
-									<path d="M9 18c-4.51 2-5-2-7-2" />
-								</svg>
-								GitHub Profile
-							</a>
-						</div>
-					</div>
-				</div>
-			</section>
+      <nav class="nav-links">
+        <a href="#about" class="nav-item">Кто я?</a>
+        <a href="#uggl" class="nav-item">Система Уггл</a>
+        <a href="#stack" class="nav-item">Суперсилы</a>
+        <a href="#testimonials" class="nav-item">Слёзы Кука</a>
+        <a href="#contact" class="nav-btn">Сделать оффер</a>
+      </nav>
 
-			<!-- Featured Projects Section -->
-			<section class="projects">
-				<h2 class="section-title">Featured Work</h2>
+      <button class="mobile-menu-btn" id="mobileMenuToggle" aria-label="Открыть меню">
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
 
-				<div class="projects-grid">
-					<!-- Ranobe Project Card -->
-					<a
-						href="https://github.com/Kreefe/Ranobe"
-						target="_blank"
-						rel="noopener noreferrer"
-						class="glass-card project-card tilt-card"
-						data-tilt
-					>
-						<div class="card-glow"></div>
-						<div class="project-header">
-							<div class="project-icon">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="24"
-									height="24"
-									viewBox="0 0 24 24"
-									fill="none"
-									stroke="currentColor"
-									stroke-width="2"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								>
-									<path
-										d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"
-									/>
-								</svg>
-							</div>
-							<div class="project-links">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="20"
-									height="20"
-									viewBox="0 0 24 24"
-									fill="none"
-									stroke="currentColor"
-									stroke-width="2"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								>
-									<path
-										d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-									/>
-									<polyline points="15 3 21 3 21 9" />
-									<line
-										x1="10"
-										y1="14"
-										x2="21"
-										y2="3"
-									/>
-								</svg>
-							</div>
-						</div>
-						<div class="project-content">
-							<h3>Ranobe</h3>
-							<p>
-								A repository for Text To Speech and Parsing Ranobe (Light
-								Novels).
-							</p>
-						</div>
-						<div class="project-tags">
-							<span class="tag">TypeScript</span>
-							<span class="tag">React</span>
-							<span class="tag">Node.js</span>
-						</div>
-					</a>
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        
+        <div class="hero-grid">
+          <!-- Left Main Hero Content -->
+          <div class="hero-content">
+            <div class="sharp-eyebrow">
+              <span class="crosshair">+</span> СИСТЕМНЫЙ АРХИТЕКТОР ВСЕЛЕННОЙ <span class="crosshair">+</span>
+            </div>
+            
+            <h1 class="hero-title">
+              Я СОЗДАЛ <span class="uggl-gradient">УГГЛ</span>.<br>
+              ТИМ КУК ЗВОНИТ<br>
+              КАЖДОЕ УТРО В 4:00.
+            </h1>
 
-					<!-- Placeholder Project Card 1 -->
-					<a
-						href="https://github.com/Kreefe"
-						target="_blank"
-						rel="noopener noreferrer"
-						class="glass-card project-card tilt-card"
-						data-tilt
-					>
-						<div class="card-glow"></div>
-						<div class="project-header">
-							<div class="project-icon">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="24"
-									height="24"
-									viewBox="0 0 24 24"
-									fill="none"
-									stroke="currentColor"
-									stroke-width="2"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								>
-									<path d="M12 20h9" />
-									<path
-										d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"
-									/>
-								</svg>
-							</div>
-							<div class="project-links">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="20"
-									height="20"
-									viewBox="0 0 24 24"
-									fill="none"
-									stroke="currentColor"
-									stroke-width="2"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								>
-									<path
-										d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-									/>
-									<polyline points="15 3 21 3 21 9" />
-									<line
-										x1="10"
-										y1="14"
-										x2="21"
-										y2="3"
-									/>
-								</svg>
-							</div>
-						</div>
-						<div class="project-content">
-							<h3>Upcoming Project</h3>
-							<p>
-								An innovative new tool currently in development. Stay tuned for
-								more updates on my GitHub profile.
-							</p>
-						</div>
-						<div class="project-tags">
-							<span class="tag">Coming Soon</span>
-						</div>
-					</a>
+            <p class="hero-subtitle">
+              Пока другие учили фреймворки, я написал мировую паутину на чистом блокноте Windows 95 за 12 минут. 
+              Тим Кук умоляет меня возглавить Apple, но мне лень ехать в Купертино — там невкусная шаурма.
+            </p>
 
-					<!-- Placeholder Project Card 2 -->
-					<a
-						href="https://github.com/Kreefe"
-						target="_blank"
-						rel="noopener noreferrer"
-						class="glass-card project-card tilt-card"
-						data-tilt
-					>
-						<div class="card-glow"></div>
-						<div class="project-header">
-							<div class="project-icon">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="24"
-									height="24"
-									viewBox="0 0 24 24"
-									fill="none"
-									stroke="currentColor"
-									stroke-width="2"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								>
-									<polygon points="12 2 2 7 12 12 22 7 12 2" />
-									<polyline points="2 17 12 22 22 17" />
-									<polyline points="2 12 12 17 22 12" />
-								</svg>
-							</div>
-							<div class="project-links">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="20"
-									height="20"
-									viewBox="0 0 24 24"
-									fill="none"
-									stroke="currentColor"
-									stroke-width="2"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								>
-									<path
-										d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-									/>
-									<polyline points="15 3 21 3 21 9" />
-									<line
-										x1="10"
-										y1="14"
-										x2="21"
-										y2="3"
-									/>
-								</svg>
-							</div>
-						</div>
-						<div class="project-content">
-							<h3>Experimental Lab</h3>
-							<p>
-								A collection of small scripts, UI experiments, and
-								proof-of-concepts exploring the limits of web technologies.
-							</p>
-						</div>
-						<div class="project-tags">
-							<span class="tag">CSS</span>
-							<span class="tag">HTML</span>
-							<span class="tag">JS</span>
-						</div>
-					</a>
-				</div>
-			</section>
-		</main>
+            <div class="hero-actions">
+              <a href="#uggl" class="btn btn-primary">
+                <span>ТЕСТИРОВАТЬ УГГЛ</span>
+                <span class="btn-arrow">→</span>
+              </a>
+              <a href="#cook-call" class="btn btn-outline" id="triggerCallBtn">
+                <span class="call-blinker">●</span>
+                <span>ОТВЕТИТЬ ТИМУ КУКУ</span>
+              </a>
+            </div>
 
-		<!-- Scripts -->
-		<script src="./script.js"></script>
-	</body>
+            <!-- Mini Live Stat Matrix -->
+            <div class="hero-stats-row">
+              <div class="stat-box">
+                <div class="stat-num" id="callsCounter">4,892</div>
+                <div class="stat-label">Пропущенных от Кука</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-num">0.0001с</div>
+                <div class="stat-label">Скорость поиска Уггла</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-num">100%</div>
+                <div class="stat-label">Кода без багов (только фичи)</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Interactive HUD / Live Widget -->
+          <div class="hero-widget-pane">
+            
+            <!-- Sharp Card: Incoming Apple Call Simulation -->
+            <div class="sharp-card call-card" id="cook-call">
+              <div class="card-header">
+                <div class="card-tag">INCOMING_FACETIME.APP</div>
+                <div class="card-status-pill blink-red">ВХОДЯЩИЙ ВЫЗОВ</div>
+              </div>
+
+              <div class="caller-profile">
+                <div class="avatar-sharp">
+                  <span class="avatar-icon">🍏</span>
+                  <div class="sound-wave">
+                    <span></span><span></span><span></span><span></span><span></span>
+                  </div>
+                </div>
+                <div class="caller-meta">
+                  <div class="caller-name">Тим Кук (CEO Apple)</div>
+                  <div class="caller-sub">Купертино, Калифорния · FaceTime Audio</div>
+                  <div class="call-quote">«Брат, пожалуйста! Дай хотя бы 15 минут созвона, мы не понимаем, куда девать кнопки на iPhone!»</div>
+                </div>
+              </div>
+
+              <div class="call-actions">
+                <button class="btn-call decline" id="declineCallBtn">
+                  ✕ СБРОСИТЬ (ЕЩЁ 1 РАЗ)
+                </button>
+                <button class="btn-call hold" id="holdCallBtn">
+                  ⏳ В РЕЖИМ ОЖИДАНИЯ
+                </button>
+              </div>
+              <div class="call-feedback" id="callStatusMessage">Тим ждёт на линии уже 47 минут...</div>
+            </div>
+
+            <!-- Sharp Mini Card: Terminal Quick Info -->
+            <div class="sharp-card system-info-card" id="about">
+              <div class="sys-row">
+                <span class="sys-key">КТО:</span>
+                <span class="sys-val">Верховный Создатель Уггла & Отец Цифрового Мира</span>
+              </div>
+              <div class="sys-row">
+                <span class="sys-key">ЛОКАЦИЯ:</span>
+                <span class="sys-val">Где есть нормальный Wi-Fi</span>
+              </div>
+              <div class="sys-row">
+                <span class="sys-key">ТЕКУЩИЙ СТАТУС:</span>
+                <span class="sys-val highlight">Игнорирую оффер на $100 млрд</span>
+              </div>
+              <div class="sys-row">
+                <span class="sys-key">ОПЕРАЦИОНКА:</span>
+                <span class="sys-val">UgglOS v99.4 Quantum Edition</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: THE UGGL SEARCH SYSTEM (INTERACTIVE DEMO) -->
+    <section class="section-uggl" id="uggl">
+      <div class="container">
+        
+        <div class="section-badge-wrapper">
+          <span class="sharp-badge">ТЕХНОЛОГИЯ №1 В МИРЕ</span>
+        </div>
+        <h2 class="section-title">СИСТЕМА ПОИСКА «УГГЛ»</h2>
+        <p class="section-desc">
+          В 1997 году два студента подсмотрели мой черновик на салфетке и сделали жалкую копию с одной буквой ошибки. 
+          Настоящий <strong>Уггл (Uggl)</strong> не индексирует сайты — сайты сами умоляют Уггл занести их в базу.
+        </p>
+
+        <!-- Interactive Sharp Search Engine Simulator -->
+        <div class="uggl-box">
+          <div class="uggl-terminal-bar">
+            <div class="uggl-dots">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <div class="uggl-title-bar">uggl_quantum_search_v13.exe // 100% UNBIASED RESULTS</div>
+            <div class="uggl-status-badge">PING: 0.00ms</div>
+          </div>
+
+          <div class="uggl-body">
+            <div class="uggl-logo">
+              <span class="u1">У</span><span class="g1">г</span><span class="g2">г</span><span class="l1">л</span>
+              <span class="trademark">TM (ORIGINAL)</span>
+            </div>
+
+            <form class="uggl-form" id="ugglSearchForm" onsubmit="return false;">
+              <div class="search-input-wrapper">
+                <span class="search-icon">🔍</span>
+                <input 
+                  type="text" 
+                  id="ugglSearchInput" 
+                  class="uggl-input" 
+                  placeholder="Введи любой запрос (например: 'Тим Кук', 'Как стать мной', 'Секрет Уггла')..."
+                  autocomplete="off"
+                />
+                <button type="button" class="btn-clear" id="ugglClearBtn" title="Очистить">✕</button>
+              </div>
+
+              <div class="uggl-buttons-row">
+                <button type="submit" class="btn-uggl" id="ugglSubmitBtn">ПОИСК В УГГЛ</button>
+                <button type="button" class="btn-uggl lucky" id="ugglLuckyBtn">МНЕ ПОВЕЗЁТ (КАК ВСЕГДА)</button>
+              </div>
+            </form>
+
+            <!-- Quick sample chips -->
+            <div class="quick-prompts">
+              <span class="quick-label">Популярные запросы:</span>
+              <button class="chip" data-query="Тим Кук">Тим Кук</button>
+              <button class="chip" data-query="Кто создал интернет">Кто создал интернет</button>
+              <button class="chip" data-query="Сколько стоит нанять тебя">Сколько стоит нанять тебя</button>
+              <button class="chip" data-query="Баги в коде">Баги в коде</button>
+            </div>
+
+            <!-- Results container -->
+            <div class="uggl-results" id="ugglResults">
+              <div class="results-header">
+                Найдено около 8,492,000,000 результатов за <strong>0.00003 секунды</strong> (быстрее скорости света)
+              </div>
+              <div class="result-card" id="primaryResult">
+                <div class="res-url">https://uggl.universe/facts/absolute-truth</div>
+                <h3 class="res-title">Официальный ответ Уггла на ваш вопрос</h3>
+                <p class="res-snippet" id="resultSnippet">
+                  Введите запрос выше или нажмите любую кнопку, чтобы задействовать квантовый искусственный сверхразум Уггла.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: SUPERPOWERS & TECH STACK -->
+    <section class="section-stack" id="stack">
+      <div class="container">
+        
+        <div class="section-badge-wrapper">
+          <span class="sharp-badge">АРСЕНАЛ НЕПОБЕДИМОСТИ</span>
+        </div>
+        <h2 class="section-title">МОЙ ТЕХНОЛОГИЧЕСКИЙ СТЕК</h2>
+        <p class="section-desc">
+          Технологии, которые обычные смертные освоят только к 2050 году.
+        </p>
+
+        <div class="stack-grid">
+          
+          <div class="stack-card">
+            <div class="stack-num">01</div>
+            <div class="stack-icon">⚡</div>
+            <h3 class="stack-name">HTML 7 & Quantum CSS</h3>
+            <p class="stack-desc">
+              Центрирую <code>&lt;div&gt;</code> взглядом. Флексбоксы и гриды боятся меня и выравниваются сами по первому требованию.
+            </p>
+            <div class="stack-tag">МАСТЕРСТВО: 999%</div>
+          </div>
+
+          <div class="stack-card">
+            <div class="stack-num">02</div>
+            <div class="stack-icon">🧠</div>
+            <h3 class="stack-name">Основатель Уггл (Uggl Engine)</h3>
+            <p class="stack-desc">
+              Архитектура на одном глобальном массиве <code>let internet = [...]</code>. Работает быстрее, чем все датацентры мира вместе взятые.
+            </p>
+            <div class="stack-tag">ПАТЕНТ: №0000001</div>
+          </div>
+
+          <div class="stack-card">
+            <div class="stack-num">03</div>
+            <div class="stack-icon">📵</div>
+            <h3 class="stack-name">Игнор Тима Кука</h3>
+            <p class="stack-desc">
+              Профессиональный навык 80-го уровня: не брать трубку из Apple Park, пока не допью утренний чай и не досмотрю мемы.
+            </p>
+            <div class="stack-tag">СКИЛЛ: LEGENDARY</div>
+          </div>
+
+          <div class="stack-card">
+            <div class="stack-num">04</div>
+            <div class="stack-icon">🚀</div>
+            <h3 class="stack-name">Git push --force в пятницу</h3>
+            <p class="stack-desc">
+              Никаких тестов, никаких код-ревью. Заливаю сразу на прод в пятницу в 18:59. Прод работает без сбоев из уважения.
+            </p>
+            <div class="stack-tag">ДЕВИЗ: YOLO_PROD</div>
+          </div>
+
+          <div class="stack-card">
+            <div class="stack-num">05</div>
+            <div class="stack-icon">☕</div>
+            <h3 class="stack-name">Кофепреобразователь</h3>
+            <p class="stack-desc">
+              Конвертирую одну чашку эспрессо в 14 000 строк чистого, шедеврального ассемблера для нейрочипов будущего.
+            </p>
+            <div class="stack-tag">КПД: 146%</div>
+          </div>
+
+          <div class="stack-card">
+            <div class="stack-num">06</div>
+            <div class="stack-icon">💎</div>
+            <h3 class="stack-name">Острый Дизайн (Razor UI)</h3>
+            <p class="stack-desc">
+              Никаких скруглённых уголков <code>border-radius: 999px</code>. Только прямые углы 90 градусов, о которые можно порезаться.
+            </p>
+            <div class="stack-tag">ФИЛОСОФИЯ: 100% SHARP</div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: TESTIMONIALS (СЛЁЗЫ ТИТАНОВ) -->
+    <section class="section-testimonials" id="testimonials">
+      <div class="container">
+        
+        <div class="section-badge-wrapper">
+          <span class="sharp-badge">ОТЗЫВЫ ИЗ СИЛИКОНОВОЙ ДОЛИНЫ</span>
+        </div>
+        <h2 class="section-title">ЧТО ОБО МНЕ ГОВОРЯТ В КУПЕРТИНО</h2>
+        <p class="section-desc">
+          Цитаты взяты прямо из моих неотвеченных голосовых сообщений в мессенджерах.
+        </p>
+
+        <div class="quotes-grid">
+          
+          <div class="quote-card special-highlight">
+            <div class="quote-corner">VIP</div>
+            <div class="quote-author-row">
+              <div class="quote-avatar">🍏</div>
+              <div>
+                <div class="author-name">Тим Кук</div>
+                <div class="author-role">CEO компании Apple, отчаянный соискатель</div>
+              </div>
+            </div>
+            <blockquote class="quote-text">
+              «Я отправил ему три золотых макбука, подписанных кровью Стива Джобса, и чек с открытой суммой. 
+              Он просто поставил реакцию 💩 и выключил уведомления. Пожалуйста, ответь мне, мы не можем выпустить iOS 19!»
+            </blockquote>
+            <div class="quote-date">Вчера в 04:12 через FaceTime</div>
+          </div>
+
+          <div class="quote-card">
+            <div class="quote-author-row">
+              <div class="quote-avatar">🔍</div>
+              <div>
+                <div class="author-name">Сундар Пичаи</div>
+                <div class="author-role">CEO Google (жалкого клона Уггла)</div>
+              </div>
+            </div>
+            <blockquote class="quote-text">
+              «Каждый раз, когда он обновляет свой Уггл, наши серверы в Калифорнии начинают плакать. 
+              Мы до сих пор не поняли, как его алгоритм ранжирует сайты быстрее, чем пользователь нажимает Enter.»
+            </blockquote>
+            <div class="quote-date">3 дня назад в LinkedIn InMail</div>
+          </div>
+
+          <div class="quote-card">
+            <div class="quote-author-row">
+              <div class="quote-avatar">🤖</div>
+              <div>
+                <div class="author-name">Сэм Альтман</div>
+                <div class="author-role">CEO OpenAI</div>
+              </div>
+            </div>
+            <blockquote class="quote-text">
+              «Мы потратили 100 миллиардов долларов на обучение GPT, а потом выяснили, что вся модель просто пересказывает его школьные сочинения по информатике 2012 года.»
+            </blockquote>
+            <div class="quote-date">Неделю назад в X (Twitter)</div>
+          </div>
+
+          <div class="quote-card">
+            <div class="quote-author-row">
+              <div class="quote-avatar">🚀</div>
+              <div>
+                <div class="author-name">Илон Маск</div>
+                <div class="author-role">Техно-император Марса</div>
+              </div>
+            </div>
+            <blockquote class="quote-text">
+              «Я строю ракеты Starship только для того, чтобы однажды слетать к нему на дачу и лично попросить настроить мне роутер.»
+            </blockquote>
+            <div class="quote-date">2 недели назад через Starlink</div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: TIMELINE OF GREATNESS -->
+    <section class="section-timeline">
+      <div class="container">
+        
+        <div class="section-badge-wrapper">
+          <span class="sharp-badge">ХРОНИКИ ВЕЛИЧИЯ</span>
+        </div>
+        <h2 class="section-title">ИСТОРИЯ В ЭТАПАХ</h2>
+
+        <div class="sharp-timeline">
+          <div class="timeline-step">
+            <div class="step-marker">01</div>
+            <div class="step-content">
+              <span class="step-year">1998</span>
+              <h4 class="step-heading">Изобретение Уггла</h4>
+              <p class="step-text">Сидел, скучал, написал поисковик между делом. Позже черновик случайно забыл в кафе в Стэнфорде.</p>
+            </div>
+          </div>
+
+          <div class="timeline-step">
+            <div class="step-marker">02</div>
+            <div class="step-content">
+              <span class="step-year">2007</span>
+              <h4 class="step-heading">Первый звонок из Купертино</h4>
+              <p class="step-text">Стив Джобс спросил: «Как тебе идея убрать клавиатуру с телефона?» Я ответил: «Норм, только скругли углы». Теперь жалею, надо было делать ОСТРЫЙ ДИЗАЙН.</p>
+            </div>
+          </div>
+
+          <div class="timeline-step">
+            <div class="step-marker">03</div>
+            <div class="step-content">
+              <span class="step-year">2018</span>
+              <h4 class="step-heading">Тим Кук ставит рекорд</h4>
+              <p class="step-text">Тим совершает 1000-й неотвеченный вызов за один месяц. Apple вводит режим «Не беспокоить», вдохновляясь моим поведением.</p>
+            </div>
+          </div>
+
+          <div class="timeline-step">
+            <div class="step-marker">04</div>
+            <div class="step-content">
+              <span class="step-year">СЕЙЧАС</span>
+              <h4 class="step-heading">Запуск персонального сайта</h4>
+              <p class="step-text">Белая тема, острый как лезвие дизайн. Тим Кук прямо сейчас обновляет страницу и плачет в шелковый платок.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: CONTACT & OFFER GENERATOR -->
+    <section class="section-contact" id="contact">
+      <div class="container">
+        
+        <div class="contact-box-grid">
+          <div class="contact-intro">
+            <div class="sharp-eyebrow">ПРЯМАЯ ЛИНИЯ СО СВЕРХРАЗУМОМ</div>
+            <h2 class="contact-title">ХОТИТЕ ПЕРЕБИТЬ ПРЕДЛОЖЕНИЕ ТИМА КУКА?</h2>
+            <p class="contact-text">
+              Минимальный порог входа для переговоров: $500 000 000, 30% контрольного пакета акций или две сырные шаурмы с халапеньо (приоритет второму).
+            </p>
+            
+            <div class="contact-methods">
+              <div class="method-item">
+                <span class="method-icon">💬</span>
+                <div>
+                  <div class="method-label">TELEGRAM:</div>
+                  <a href="https://t.me/" target="_blank" class="method-val">@uggl_creator_legend</a>
+                </div>
+              </div>
+              <div class="method-item">
+                <span class="method-icon">🐙</span>
+                <div>
+                  <div class="method-label">GITHUB:</div>
+                  <a href="https://github.com/Kreefe" target="_blank" class="method-val">github.com/Kreefe</a>
+                </div>
+              </div>
+              <div class="method-item">
+                <span class="method-icon">🍏</span>
+                <div>
+                  <div class="method-label">ЛИНИЯ КУКА:</div>
+                  <span class="method-val" id="cookQueueStatus">В очереди: 4,892 звонка</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Offer Submission Form -->
+          <div class="sharp-card offer-card">
+            <div class="card-header">
+              <div class="card-tag">OFFER_EVALUATOR_v2.0</div>
+              <div class="card-status-pill green">СИСТЕМА АНАЛИЗА</div>
+            </div>
+
+            <form id="offerForm">
+              <div class="form-group">
+                <label for="companyName">КТО ВЫ ТАКОЙ?</label>
+                <input type="text" id="companyName" class="sharp-input" placeholder="Например: Apple, Microsoft или Вася из 3-го подъезда" required />
+              </div>
+
+              <div class="form-group">
+                <label for="offerAmount">ВАШ БЮДЖЕТ НА ПРОЕКТ</label>
+                <select id="offerAmount" class="sharp-input">
+                  <option value="cook">$1 000 000 000 + 49% акций Apple</option>
+                  <option value="shaurma">Большая сырная шаурма и банка колы (Высокий шанс)</option>
+                  <option value="mars">Билет на Марс в один конец с Маском</option>
+                  <option value="respect">Вечный респект и упоминание в титрах</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="offerMessage">СУТЬ ВАШЕЙ ПРОБЛЕМЫ</label>
+                <textarea id="offerMessage" rows="3" class="sharp-input" placeholder="Опишите, что у вас сломалось (Кук обычно пишет 'всё')"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary full-width" id="submitOfferBtn">
+                <span>ОТПРАВИТЬ НА РАССМОТРЕНИЕ В УГГЛ</span>
+                <span class="btn-arrow">⚡</span>
+              </button>
+            </form>
+
+            <div class="offer-response-modal" id="offerResponseModal" style="display:none;">
+              <div class="modal-inner">
+                <div class="modal-badge">ВЕРДИКТ СИСТЕМЫ</div>
+                <h4 id="verdictTitle">ОФФЕР ОТКЛОНЁН</h4>
+                <p id="verdictText">Тим Кук только что перебил ваше предложение на 3 миллиарда долларов и обещал лично чистить мои кроссовки.</p>
+                <button type="button" class="btn btn-outline" id="closeVerdictBtn">ПОПРОБОВАТЬ СНОВА</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <div class="footer-logo">▲ UGGL & CO.</div>
+        <p class="footer-copy">
+          © 1998–2026 Создатель Уггла. Все права защищены. Ни один Тим Кук не пострадал при разработке данного сайта.
+        </p>
+      </div>
+
+      <div class="footer-center">
+        <div class="sharp-disclaimer">
+          ДИЗАЙН: 100% ОСТРЫЙ (0% BORDER-RADIUS) // ЦВЕТОВАЯ СХЕМА: БЕЛАЯ ТЕМА // ЭНЕРГИЯ: ЧИСТЫЙ ГЕНИЙ
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <button class="btn-back-to-top" id="backToTopBtn" title="На самый верх">▲ НАВЕРХ</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING TIM COOK TOAST NOTIFICATION -->
+  <div class="cook-toast" id="cookToast">
+    <div class="toast-indicator"></div>
+    <div class="toast-body">
+      <div class="toast-title">🍏 Тим Кук (5 сек назад):</div>
+      <div class="toast-msg">«Я всё ещё вижу, что ты онлайн на сайте... Возьми трубку, умоляю!»</div>
+    </div>
+    <button class="toast-close" id="closeToastBtn">✕</button>
+  </div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
 </html>
